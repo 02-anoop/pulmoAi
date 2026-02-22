@@ -1,12 +1,10 @@
 /**
  * CHATBOT ROUTES
- * ==============
  * Intelligent medical chatbot powered by Google Gemini AI.
  *
  * Uses Gemini 1.5 Flash (FREE tier):
  *   - 15 req/min, 1,500 req/day, 1M tokens/month
- *   - Falls back to rule-based responses if API key is missing
- */
+ *   - Falls back to rule-based responses if API key is missing */
 
 const express = require('express');
 const { getChatbotResponse } = require('../utils/geminiAI');
@@ -91,9 +89,9 @@ function getRuleBasedResponse(message) {
   return defaultFallbackResponse;
 }
 
-// ==========================================
+
 // CHATBOT ENDPOINT
-// ==========================================
+
 
 /**
  * POST /api/chatbot
@@ -159,9 +157,9 @@ router.post('/chatbot', async (req, res) => {
   }
 });
 
-// ==========================================
+
 // CHATBOT INFO
-// ==========================================
+
 
 /**
  * GET /api/chatbot/info

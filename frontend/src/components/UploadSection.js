@@ -1,9 +1,7 @@
 /**
  * UPLOAD SECTION COMPONENT
- * =========================
  * CT scan image upload with drag-and-drop support and preview
- * Clean, professional medical interface
- */
+ * Clean, professional medical interface */
 
 import React, { useState, useRef, useCallback } from 'react';
 

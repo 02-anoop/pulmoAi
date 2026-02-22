@@ -1,6 +1,5 @@
 /**
  * GEMINI AI INTEGRATION — SMART MODEL CASCADE
- * ============================================
  * Real AI-powered pulmonary nodule detection.
  * Automatically tries multiple models so quota issues on one
  * never block the analysis.
@@ -12,8 +11,7 @@
  *   1. gemini-2.0-flash     – 15 RPM, 1500 RPD
  *   2. gemini-2.0-flash-lite – 30 RPM, 1500 RPD (lighter quota)
  *   3. gemini-2.5-flash     – 10 RPM, 500 RPD
- *   4. gemini-flash-lite-latest – alias for flash-lite
- */
+ *   4. gemini-flash-lite-latest – alias for flash-lite */
 
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const fs = require('fs');
@@ -36,9 +34,9 @@ const CHAT_MODELS = [
     'gemini-flash-lite-latest',
 ];
 
-// ==========================================
+
 // HELPERS
-// ==========================================
+
 
 function isQuotaError(err) {
     return err.message.includes('429') ||
@@ -80,9 +78,9 @@ async function tryModels(models, fn) {
     );
 }
 
-// ==========================================
+
 // CT SCAN ANALYSIS
-// ==========================================
+
 
 const VISION_PROMPT = `You are an AI medical imaging assistant specialized in pulmonary radiology.
 Analyze this image and respond ONLY with a valid JSON object (no markdown, no extra text):
@@ -167,9 +165,9 @@ async function analyzeCTScan(imagePath) {
     };
 }
 
-// ==========================================
+
 // INTELLIGENT CHATBOT
-// ==========================================
+
 
 const SYSTEM_INSTRUCTION = `You are a knowledgeable and empathetic medical information assistant for a Pulmonary Nodule Detection web application.
 
@@ -209,9 +207,9 @@ async function getChatbotResponse(userMessage, conversationHistory = []) {
     return result.response.text();
 }
 
-// ==========================================
+
 // UTILITIES
-// ==========================================
+
 
 function str(val, fallback) {
     return typeof val === 'string' && val.trim() ? val.trim() : fallback;

@@ -1,8 +1,6 @@
 /**
  * LANDING PAGE COMPONENT
- * ======================
- * Modern, animated landing page with hero section and features
- */
+ * Modern, animated landing page with hero section and features */
 
 import React from 'react';
 

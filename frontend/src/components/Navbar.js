@@ -1,8 +1,6 @@
 /**
  * NAVBAR COMPONENT
- * ================
- * Modern, animated navigation bar
- */
+ * Modern, animated navigation bar */
 
 import React, { useState, useEffect } from 'react';
 

@@ -1,8 +1,6 @@
 /**
  * CHATBOT COMPONENT
- * ==================
- * Interactive medical information chatbot
- */
+ * Interactive medical information chatbot */
 
 import React, { useState, useRef, useEffect } from 'react';
 import { sendChatMessage, getChatbotInfo } from '../services/api';

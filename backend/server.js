@@ -1,9 +1,7 @@
 /**
  * PULMONARY NODULE DETECTION - BACKEND SERVER
- * ============================================
  * Main server file for the medical AI application
- * Powered by Google Gemini Vision AI
- */
+ * Powered by Google Gemini Vision AI */
 
 // Import required packages
 const express = require('express');
@@ -22,9 +20,9 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 const FRONTEND_URL = process.env.FRONTEND_URL || 'http://localhost:3000';
 
-// ==========================================
+
 // MIDDLEWARE CONFIGURATION
-// ==========================================
+
 
 // Enable CORS for frontend communication
 app.use(cors({
@@ -47,9 +45,9 @@ app.use((req, res, next) => {
   next();
 });
 
-// ==========================================
+
 // ROUTES
-// ==========================================
+
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
@@ -74,9 +72,9 @@ app.use((req, res) => {
   });
 });
 
-// ==========================================
+
 // ERROR HANDLING MIDDLEWARE
-// ==========================================
+
 
 app.use((err, req, res, next) => {
   console.error('Error:', err.stack);
@@ -87,9 +85,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-// ==========================================
+
 // START SERVER
-// ==========================================
+
 
 app.listen(PORT, () => {
   console.log('\n╔════════════════════════════════════════════════════════════╗');

@@ -1,8 +1,6 @@
 /**
  * RESULT DISPLAY COMPONENT
- * =========================
- * Shows AI prediction results with detailed analysis and PDF export
- */
+ * Shows AI prediction results with detailed analysis and PDF export */
 
 import React from 'react';
 import jsPDF from 'jspdf';

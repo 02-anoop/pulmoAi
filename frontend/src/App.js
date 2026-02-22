@@ -1,8 +1,6 @@
 /**
  * MAIN APP COMPONENT
- * ==================
- * Root component managing application state and layout
- */
+ * Root component managing application state and layout */
 
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
@@ -13,9 +11,9 @@ import Chatbot from './components/Chatbot';
 import { uploadCTScan, checkHealth } from './services/api';
 import './styles/ModernApp.css';
 
-// ==========================================
+
 // ERROR CARD — shows smart error messages
-// ==========================================
+
 
 function classifyError(msg) {
   if (!msg) return 'generic';
@@ -87,9 +85,9 @@ function ErrorCard({ message }) {
   );
 }
 
-// ==========================================
+
 // MAIN APP
-// ==========================================
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');

@@ -1,12 +1,10 @@
 /**
  * MODERN UI STYLESHEET
- * ====================
- * Professional medical imaging application with animations
- */
+ * Professional medical imaging application with animations */
 
-/* ==========================================
-   CSS VARIABLES & MODERN THEME
-   ========================================== */
+
+/* CSS VARIABLES & MODERN THEME */
+
 
 :root {
   /* Modern Color Palette - Purple/Blue Gradient Theme */
@@ -65,9 +63,9 @@
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ==========================================
-   GLOBAL STYLES
-   ========================================== */
+
+/* GLOBAL STYLES */
+
 
 * {
   margin: 0;
@@ -91,9 +89,9 @@ body {
   flex-direction: column;
 }
 
-/* ==========================================
-   NAVBAR - MODERN & ANIMATED
-   ========================================== */
+
+/* NAVBAR - MODERN & ANIMATED */
+
 
 .navbar {
   position: fixed;
@@ -251,9 +249,9 @@ body {
   box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
-/* ==========================================
-   LANDING PAGE - STUNNING HERO
-   ========================================== */
+
+/* LANDING PAGE - STUNNING HERO */
+
 
 .landing-page {
   padding-top: 80px;
@@ -548,9 +546,9 @@ body {
   }
 }
 
-/* ==========================================
-   FEATURES SECTION
-   ========================================== */
+
+/* FEATURES SECTION */
+
 
 .features-section {
   max-width: 1400px;
@@ -628,9 +626,9 @@ body {
   line-height: 1.6;
 }
 
-/* ==========================================
-   HOW IT WORKS SECTION
-   ========================================== */
+
+/* HOW IT WORKS SECTION */
+
 
 .how-it-works-section {
   max-width: 1400px;
@@ -695,9 +693,9 @@ body {
   font-weight: 700;
 }
 
-/* ==========================================
-   ABOUT SECTION
-   ========================================== */
+
+/* ABOUT SECTION */
+
 
 .about-section {
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
@@ -867,9 +865,9 @@ body {
   line-height: 1.6;
 }
 
-/* ==========================================
-   CTA SECTION
-   ========================================== */
+
+/* CTA SECTION */
+
 
 .cta-section {
   background: var(--accent-gradient);
@@ -933,9 +931,9 @@ body {
   box-shadow: var(--shadow-2xl);
 }
 
-/* ==========================================
-   MAIN CONTENT (Scan Page)
-   ========================================== */
+
+/* MAIN CONTENT (Scan Page) */
+
 
 .main-content {
   flex: 1;
@@ -951,9 +949,9 @@ body {
   margin: 0 auto;
 }
 
-/* ==========================================
-   STATUS BANNER
-   ========================================== */
+
+/* STATUS BANNER */
+
 
 .status-banner {
   padding: 1rem;
@@ -983,9 +981,9 @@ body {
 
 /* ==========================================
 
-/* ==========================================
-   UPLOAD SECTION
-   ========================================== */
+
+/* UPLOAD SECTION */
+
 
 .upload-section {
   background: white;
@@ -1444,9 +1442,9 @@ body {
 .generic-card h4 { color: #dc2626; }
 
 
-/* ==========================================
-   RESULT DISPLAY STRUCTURE
-   ========================================== */
+
+/* RESULT DISPLAY STRUCTURE */
+
 
 .result-section {
   margin-top: 1.5rem;
@@ -1694,9 +1692,9 @@ body {
 }
 
 
-/* ==========================================
-   CHATBOT UI (REDESIGNED)
-   ========================================== */
+
+/* CHATBOT UI (REDESIGNED) */
+
 
 .chatbot-toggle {
   position: fixed;

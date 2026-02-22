@@ -1,8 +1,6 @@
 /**
  * API SERVICE LAYER
- * =================
- * Centralized API calls to backend server
- */
+ * Centralized API calls to backend server */
 
 import axios from 'axios';
 
@@ -18,9 +16,9 @@ const apiClient = axios.create({
   }
 });
 
-// ==========================================
+
 // PREDICTION API
-// ==========================================
+
 
 /**
  * Upload CT scan image for analysis
@@ -71,9 +69,9 @@ export const getPredictionHistory = async () => {
   }
 };
 
-// ==========================================
+
 // CHATBOT API
-// ==========================================
+
 
 /**
  * Send message to chatbot
@@ -122,9 +120,9 @@ export const getChatbotInfo = async () => {
   }
 };
 
-// ==========================================
+
 // HEALTH CHECK
-// ==========================================
+
 
 /**
  * Check if backend is running
@@ -140,9 +138,9 @@ export const checkHealth = async () => {
   }
 };
 
-// ==========================================
+
 // ERROR HANDLING
-// ==========================================
+
 
 /**
  * Handle API errors and return user-friendly messages

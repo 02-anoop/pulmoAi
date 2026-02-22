@@ -1,12 +1,10 @@
 /**
  * PREDICTION ROUTES
- * =================
  * Handles CT scan upload and real AI prediction via Google Gemini Vision.
  *
  * Uses FREE Google Gemini 1.5 Flash API:
  *   - 15 req/min, 1,500 req/day, 1M tokens/month — no credit card required
- *   - Get API key: https://aistudio.google.com/app/apikey
- */
+ *   - Get API key: https://aistudio.google.com/app/apikey */
 
 const express = require('express');
 const multer = require('multer');
@@ -17,9 +15,9 @@ const { analyzeCTScan } = require('../utils/geminiAI');
 
 const router = express.Router();
 
-// ==========================================
+
 // FILE UPLOAD CONFIGURATION
-// ==========================================
+
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -52,9 +50,9 @@ const upload = multer({
   limits: { fileSize: 10 * 1024 * 1024 }, // 10 MB limit
 });
 
-// ==========================================
+
 // PREDICTION ENDPOINT  (REAL AI)
-// ==========================================
+
 
 /**
  * POST /api/predict
@@ -127,9 +125,9 @@ router.post('/predict', upload.single('image'), async (req, res) => {
   }
 });
 
-// ==========================================
+
 // PREDICTION HISTORY
-// ==========================================
+
 
 /**
  * GET /api/predictions
@@ -164,9 +162,9 @@ router.get('/predictions', (req, res) => {
   }
 });
 
-// ==========================================
+
 // MULTER ERROR HANDLING
-// ==========================================
+
 
 router.use((error, req, res, next) => {
   if (error instanceof multer.MulterError) {
