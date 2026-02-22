@@ -1,0 +1,21 @@
+REQUIRED DICOM FILES (10 total)
+================================
+
+FILES WITH NODULES (6):
+-----------------------
+1. nodule-case-001.dcm - Malignant nodule, spiculated, >8mm
+2. nodule-case-002.dcm - Suspicious nodule, irregular margins
+3. nodule-case-003.dcm - Multiple small nodules
+4. nodule-case-004.dcm - Large nodule with cavitation
+5. nodule-case-005.dcm - Ground-glass opacity nodule
+6. nodule-case-006.dcm - Solid nodule, upper lobe
+
+BENIGN FILES (4):
+-----------------
+1. benign-case-001.dcm - Clear lungs, no findings
+2. benign-case-002.dcm - Calcified granuloma (benign)
+3. benign-case-003.dcm - Small benign nodule <4mm
+4. benign-case-004.dcm - Post-inflammatory changes
+
+Download these from TCIA LIDC-IDRI collection
+URL: https://www.cancerimagingarchive.net/
